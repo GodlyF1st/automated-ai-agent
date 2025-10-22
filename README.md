@@ -2,7 +2,7 @@
 
 This repository contains a FastAPI app that starts a background automation agent that uses Google Gemini, Playwright to interact with web pages by typing the agent the goal that needs to be achieved.
 
-## What this does
+## What this code does
 - Exposes a POST endpoint `/startapi` which accepts a JSON body with `task` and `apikey`.
 - The endpoint starts a background automation task that:
   - Launches a Playwright browser
@@ -64,5 +64,6 @@ After the endpoint responds, the agent runs in the background and logs progress 
 
 ## Security
 - Do NOT hardcode API key.
+
 
 
