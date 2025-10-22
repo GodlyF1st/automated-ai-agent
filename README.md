@@ -46,12 +46,15 @@ Once the setup is complete, you can start the API server using Uvicorn.
 uvicorn main:app --host "127.0.0.1" --port 9900
 ```
 
+Web:
+You can use the URL `http://127.0.0.1:9900/docs` and execute the code from there.
+
 Example using curl (PowerShell):
 
 ```powershell
 $body = @{
     task = "Log in with username 'student' and password 'Password123', and then log out."
-    apikey = "YOUR_GOOGLE_API_KEY"
+    apikey = "AIzaSyB-WW7u27Ke4Gr3t60rqakWzVwCHcLGJCA"
 } | ConvertTo-Json
 
 Invoke-RestMethod -Uri http://127.0.0.1:9900/startapi -Method Post -Body $body -ContentType 'application/json'
@@ -61,3 +64,4 @@ After the endpoint responds, the agent runs in the background and logs progress 
 
 ## Security
 - Do NOT hardcode API key.
+
