@@ -54,7 +54,7 @@ Example using curl (PowerShell):
 ```powershell
 $body = @{
     task = "Log in with username 'student' and password 'Password123', and then log out."
-    apikey = "AIzaSyB-WW7u27Ke4Gr3t60rqakWzVwCHcLGJCA"
+    apikey = "YOUR_API_KEY"
 } | ConvertTo-Json
 
 Invoke-RestMethod -Uri http://127.0.0.1:9900/startapi -Method Post -Body $body -ContentType 'application/json'
@@ -64,4 +64,5 @@ After the endpoint responds, the agent runs in the background and logs progress 
 
 ## Security
 - Do NOT hardcode API key.
+
 
